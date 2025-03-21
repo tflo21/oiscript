@@ -1,0 +1,150 @@
+/* frontend/src/components/MinimalExpectedMoveInput.css */
+.min-em-container {
+  margin: 15px 0;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.min-em-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.min-em-header h3 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: #333;
+}
+
+.min-em-edit-button {
+  background-color: #4287f5;
+  color: white;
+  border: none;
+  border-radius: 12x;
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.min-em-edit-button:hover {
+  background-color: #3a78e0;
+}
+
+.min-em-values {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+.min-em-value-item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.min-em-ticker {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.min-em-value {
+  font-size: 18px;
+  font-weight: 500;
+  color: #4287f5;
+}
+
+/* Edit mode */
+.min-em-editing h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+}
+
+.min-em-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.min-em-input-row {
+  display: flex;
+  align-items: center;
+}
+
+.min-em-input-row label {
+  width: 80px;
+  font-weight: 500;
+  color: #333;
+}
+
+.min-em-input-wrapper {
+  position: relative;
+  flex: 1;
+}
+
+.min-em-currency {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+.min-em-input-wrapper input {
+  width: 100%;
+  padding: 8px 8px 8px 24px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.min-em-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.min-em-save {
+  background-color: #4287f5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.min-em-save:hover {
+  background-color: #3a78e0;
+}
+
+.min-em-cancel {
+  background-color: #f8f9fa;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.min-em-cancel:hover {
+  background-color: #e9ecef;
+}

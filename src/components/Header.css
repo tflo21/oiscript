@@ -1,0 +1,98 @@
+/* frontend/src/components/Header.css */
+.enhanced-header {
+    width: 100%;
+    padding: 40px 0;
+    background-color: #f3f3f3;
+    border-bottom: 1px solid #f3f3f3;
+    margin-bottom: 20px;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .logo-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  .app-logo {
+    width: 300px;
+  }
+  
+  .app-title {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .discord-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #666666;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 250vh;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .discord-button:hover {
+    background-color: #5865F2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .discord-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .caret-icon {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+  }
+  
+  .discord-button:hover .caret-icon {
+    transform: translateX(4px) scale(120%);
+  }
+  
+  .discord-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .header-content {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+    }
+    
+    .app-title {
+      font-size: 1.5rem;
+    }
+  }
+  
+/*    Dark mode support 
+  @media (prefers-color-scheme: dark) {
+    .enhanced-header {
+      background-color: #eeeeee;
+      border-bottom-color: #eeeeee;
+    }
+    
+    .app-title {
+      color: #000000;
+    }
+  } */

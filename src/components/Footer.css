@@ -1,0 +1,105 @@
+/* Footer.css */
+
+.app-footer {
+    margin-top: 40px;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    width: 100%;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .copyright {
+    font-size: 14px;
+    color: #666;
+  }
+
+  .credit {
+    font-size: 14px;
+    color: #666;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    transition: all 0.3s ease-out;
+  }
+  
+  .social-link:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.1);
+  }
+  
+  .social-icon {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+  }
+  
+  /* Social media brand colors on hover */
+  .social-link:nth-child(1):hover .social-icon {
+    fill: #000000; /* Website */
+  }
+
+  .social-link:nth-child(2):hover .social-icon {
+    fill: #1877F2; /* Facebook */
+  }
+  
+  .social-link:nth-child(3):hover .social-icon {
+    fill: #FF0069; /* Instagram */
+  }
+
+    .social-link:nth-child(4):hover .social-icon {
+    fill: #000000; /* X */
+  }
+  
+  /* Dark mode support */
+/*   @media (prefers-color-scheme: dark) {
+    .app-footer {
+      border-top-color: #444;
+    }
+    
+    .copyright {
+      color: #000000;
+    }
+    
+    .social-link {
+      background-color: #ffffff;
+    }
+    
+    .social-link:hover {
+      background-color: #444;
+    }
+    
+    .social-icon {
+      fill: #bbb;
+    }
+  } */
+  
+  /* Mobile responsiveness */
+  @media (max-width: 600px) {
+    .footer-content {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
