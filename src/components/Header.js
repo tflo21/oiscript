@@ -15,7 +15,7 @@ const Header = () => {
           <h1 className="app-title"></h1>
         </div>
         <a 
-          href="https://discord.gg/trading-alphas-606201198642593830" 
+          href="https://whop.com/beta-tier/" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="discord-button"
